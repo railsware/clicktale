@@ -1,0 +1,12 @@
+Clicktale
+=========
+You should specify Clicktale.project_id and Clicktale.ratio in your environment.
+
+1. Put your settings into initializer
+	Example: config/initializers/clicktale.rb
+		Clicktale.project_id = '1212'
+		Clicktale.ratio = '0.5'
+		
+2. Call <%= clicktale_tracker %> from view.
+
+Copyright (c) 2009 Railsware LLC, released under the MIT license
