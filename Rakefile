@@ -18,3 +18,20 @@ desc "Run all specifications"
 Spec::Rake::SpecTask.new('spec') do |t|
   t.spec_files = FileList['spec/*.rb']
 end
+
+begin  
+  require 'jeweler'  
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "clicktale"
+    gemspec.summary = "Use ClickTale analytics service with rails sites that require sessions"
+    gemspec.description = "Use ClickTale (http://www.clicktale.com/) analytics service with rails sites that require sessions (user authentication for example)"
+    gemspec.email = "al@railsware.com"
+    gemspec.homepage = "http://github.com/railsware/clicktale"
+    gemspec.description = IO.read "README"
+    gemspec.authors = ["Railsware LLC"]
+  end
+  Jeweler::GemcutterTasks.new
+rescue LoadError
+  puts "Jeweler not available. Install it with: sudo gem install jeweler"
+end
+
