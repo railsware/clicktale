@@ -27,7 +27,7 @@ begin
     gemspec.description = "Use ClickTale (http://www.clicktale.com/) analytics service with rails sites that require sessions (user authentication for example)"
     gemspec.email = "al@railsware.com"
     gemspec.homepage = "http://github.com/railsware/clicktale"
-    gemspec.description = IO.read "README"
+    gemspec.description = gemspec.description
     gemspec.authors = ["Railsware LLC"]
   end
   Jeweler::GemcutterTasks.new

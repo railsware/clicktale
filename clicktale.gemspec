@@ -10,18 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Railsware LLC"]
   s.date = %q{2010-03-31}
-  s.description = %q{Clicktale
-=========
-You should specify Clicktale.project_id and Clicktale.ratio in your environment.
-
-1. Put your settings into initializer
-	Example: config/initializers/clicktale.rb
-		Clicktale.project_id = '1212'
-		Clicktale.ratio = '0.5'
-		
-2. Call <%= clicktale_tracker %> from view.
-
-Copyright (c) 2009 Railsware LLC, released under the MIT license}
+  s.description = %q{Use ClickTale (http://www.clicktale.com/) analytics service with rails sites that require sessions (user authentication for example)}
   s.email = %q{al@railsware.com}
   s.extra_rdoc_files = [
     "README"
@@ -31,6 +20,7 @@ Copyright (c) 2009 Railsware LLC, released under the MIT license}
      "README",
      "Rakefile",
      "VERSION",
+     "clicktale.gemspec",
      "init.rb",
      "lib/clicktale.rb",
      "lib/clicktale_helper.rb",
